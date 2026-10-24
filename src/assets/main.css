@@ -1,0 +1,101 @@
+:root {
+  font-family: "PingFang SC", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #203846;
+  background: #f2f5f7;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
+
+  --color-bg: #f2f5f7;
+  --color-paper: #ffffff;
+  --color-ink: #203846;
+  --color-muted: #647783;
+  --color-line: #dce5ea;
+  --color-accent: #285f77;
+  --color-accent-hover: #204e63;
+  --color-soft: #edf4f7;
+  --color-focus: #4d93b2;
+  --color-warning: #836016;
+  --color-warning-bg: #fff7e5;
+  --color-warning-line: #eadbb8;
+  --color-danger: #aa4441;
+  --color-danger-bg: #fff3f1;
+  --color-danger-line: #edcfcc;
+  --radius-card: 18px;
+  --radius-control: 9px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+#app {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+button,
+textarea {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+button,
+textarea,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+::selection {
+  color: var(--color-ink);
+  background: #cce2ed;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}
